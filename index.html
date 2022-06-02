@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> -->
+    <script type="module" src="./script.js" defer></script>
+ 
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="./img/logo.svg" alt="">
+        <input type="text" class="input-browser" placeholder="Введите запрос">
+    </header>
+
+    <h1 class="h1-main-header">
+        Клиенты
+    </h1>
+
+    <table class="table-students">
+        <tr id="header-row">
+            <th class="header_th_id">ID <img src="./img/arrow_up.svg" alt="" class="id_arrow"></th>
+            <th class="header_th_fullname" >Фамилия Имя Отчество <img src="./img/arrow_up.svg" alt="" class="fio_arrow"> <img src="./img/a-ya.svg" alt=""></th>
+            <th class="header_th_create_date">Дата и время создания <img src="./img/arrow_up.svg" alt="" class="create_date_arrow"></th>
+            <th class="header_th_last_change">Последние изменения <img src="./img/arrow_up.svg" alt="" class="change_date_arrow"></th>
+            <th class="header_th_contacts">Контакты</th>
+            <th class="header_th_actions" colspan="2">Действия</th>
+            <th class="header_th_faculty"></th>
+        </tr>
+
+    </table>
+
+    <button class="main-btn-add-client"><img src="./img/add_icon.svg" alt=""> Добавить клиента</button>
+    <form action="#" class="modal modal-input">
+        <div class="modal-content">
+            <div class="modal-input-group">
+                <img src="./img/cross.svg" alt="" class="cross">
+                <h3 class="title-new-client">Новый клиент</h3>
+                <input type="text" placeholder="Фамилия" class="input-surname">
+                <input type="text" placeholder="Имя" class="input-name">
+                <input type="text" placeholder="Отчество" class="input-patronymic">
+            </div>
+
+            <div class="container-choose-contacts">
+              
+            </div>
+            <button class="add-contact"><img src="./img/plus.svg" alt=""> Добавить контакт</button>
+
+            <div class="save-cancel-group">
+            <p class="alert_p alert-main-input">Пожалуйста, заполните все поля</p>
+
+                <button class="save-contact">Сохранить</button>
+                <button class="cancel-contact">Отмена</button>
+            </div>
+
+        </div>
+    </form>
+
+    <form action="#" class="modal modal-edit">
+        <div class="edit-modal-content">
+            <div class="edit-modal-input-group">
+                <img src="./img/cross.svg" alt="" class="cross">
+                <div class="edit-header">
+                    <h3 class="title-new-client">Изменить данные</h3>
+                    <p class="edit-modal-id">ID: 34625</p>
+                </div>
+                <input type="text" placeholder="Фамилия*" class="edit-input-surname">
+                <input type="text" placeholder="Имя*" class="edit-input-name">
+                <input type="text" placeholder="Отчество" class="edit-input-patronymic">
+            </div>
+            <div class="edit-container-choose-contacts">
+              
+
+            </div>
+            <button class="add-contact"><img src="./img/plus.svg" alt=""> Добавить контакт</button>
+
+            <div class="save-cancel-group">
+            <p class="alert_p alert-edit-input">Пожалуйста, заполните все поля</p>
+
+                <button class="edit-save-contact">Сохранить</button>
+                <button class="edit-delete-contact">Удалить клиента</button>
+            </div>
+        </div>
+    </form>
+
+    <form action="#" class="modal modal-confirm-delete">
+        <div class="container-confirm-delete-client">
+            <h3>Удалить клиента</h3>
+            <p>Вы действительно хотите удалить данного клиента?</p>
+            <button class="btn-confirm-delete">Удалить</button>
+            <button class="btn-confirm-cancel">Отмена</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

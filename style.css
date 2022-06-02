@@ -1,0 +1,399 @@
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        select {
+            background-color: #E7E5EB;
+            border: 1px solid #3333331f
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Open Sans', sans-serif;
+            width: 1024px;
+            margin: 0 auto;
+            background-color: #E5E5E5;
+        }
+        
+        button:hover {
+            cursor: pointer;
+        }
+        
+        .cross:hover {
+            cursor: pointer;
+        }
+        
+        .modal-input {
+            inset: 0;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.281);
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            padding-top: 100px;
+            display: none;
+        }
+        
+        
+        .modal-edit {
+            inset: 0;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.281);
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            padding-top: 100px;
+            display: none;
+        }
+        
+        .modal-content {
+            margin: 0 auto;
+            position: relative;
+            width: 450px;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            /* padding: 24px 30px 29px 30px; */
+            border: 1px solid black;
+            background-color: #e7e5eb;
+        }
+        
+        .modal-input-group {
+            background-color: #fff;
+            padding: 24px 30px;
+        }
+        
+        .modal-content h3 {
+            margin-bottom: 30px;
+        }
+        
+        .modal-content input {
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+        
+        .modal-content input:not(:last-child) {
+            margin-bottom: 45px;
+        }
+        
+        .modal-content .cross {
+            position: absolute;
+            top: 21.77px;
+            right: 21.77px;
+        }
+        
+        .modal-input-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .alert_p{
+            color: red;
+            font-size: 10px;
+            margin-bottom: 9px;
+            display: none;
+        }
+        .save-cancel-group {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            padding-top: 25px;
+            padding-bottom: 29px;
+            align-items: center;
+        }
+        
+        .save-contact,
+        .edit-save-contact,
+        .btn-confirm-delete {
+            min-height: 44px;
+            width: 147px;
+            height: 44px;
+            margin-bottom: 5px;
+            border-radius: 0px;
+            border: none;
+            background-color: #9873FF;
+            color: white;
+        }
+        
+        .btn-confirm-delete {
+            margin: 25px;
+        }
+        
+        .add-contact {
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+            height: 35px;
+            font-weight: bold;
+            /* margin-top: 25px; */
+            margin-bottom: 25px;
+        }
+        
+        .cancel-contact,
+        .edit-delete-contact,
+        .btn-confirm-cancel {
+            border: none;
+            background-color: rgba(255, 255, 255, 0);
+            text-decoration: underline;
+        }
+        
+        .edit-modal-content {
+            margin: 0 auto;
+            position: relative;
+            width: 450px;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            /* padding: 24px 30px 29px 30px; */
+            border: 1px solid black;
+            background-color: #e9e7ee;
+            /* display: none; */
+        }
+        
+        .edit-modal-input-group {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            padding: 24px 30px;
+        }
+        
+        .edit-modal-content .cross {
+            position: absolute;
+            top: 21.77px;
+            right: 21.77px;
+        }
+        
+        .edit-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .edit-header h3 {
+            margin-bottom: 30px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: 9px;
+        }
+        
+        .edit-header p {
+            color: grey;
+        }
+        
+        .edit-modal-content input {
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+        
+        .edit-modal-content input:not(:last-child) {
+            margin-bottom: 45px;
+        }
+        
+        .modal-confirm-delete {
+            inset: 0;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.281);
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            padding-top: 100px;
+            display: none;
+        }
+        
+        .container-confirm-delete-client {
+            width: 450px;
+            height: 215px;
+            max-height: max-content;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 22px;
+            padding-bottom: 27px;
+            padding-right: 88px;
+            padding-left: 88px;
+            margin: 0 auto;
+        }
+        
+        .container-confirm-delete-client h3 {
+            margin-bottom: 11px;
+        }
+        /* .container-confirm-delete-client .btn-confirm-delete {
+            width: 147px;
+            height: 44px;
+            margin-bottom: 5px;
+            border-radius: 0px;
+            border: none;
+            background-color: #9873FF;
+            color: white;
+        } */
+        
+        .modal-cofirm-delete {
+            display: none;
+        }
+        /* 
+        .modal-cofirm-delete .btn-confirm-delete {
+            width: 131px;
+            height: 64px;
+        } */
+        
+        .container-choose-contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25px;
+        }
+        
+        .edit-container-choose-contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25px;
+        }
+        
+        .container-choose-contacts select,
+        input,
+        button {
+            height: 100%;
+        }
+        
+        
+        .choose-contact-row {
+            display: flex;
+            flex-direction: row;
+            width: 390px;
+            height: 37px;
+            margin-top: 15px;
+        }
+        
+        .choose-contact-row input {
+            width: 236px;
+            border: none;
+        }
+        
+        header {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 90px;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0px 9.03012px 27.0904px rgba(176, 190, 197, 0.32), 0px 3.38629px 5.64383px rgba(176, 190, 197, 0.32);
+            margin-bottom: 40px;
+        }
+        
+        .header_th_fullname,
+        .header_th_id:hover {
+            cursor: pointer;
+        }
+        
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 53px;
+        }
+        
+        header input {
+            width: 581px;
+            height: 44px;
+            border: 1px solid #3333331f;
+            padding-left: 16px;
+        }
+        
+        table {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        
+        #content-row {
+            background-color: #fff;
+        }
+        
+        .h1-main-header {
+            margin-bottom: 26px;
+        }
+        
+        .main-btn-add-client {
+            color: #9873FF;
+            font-weight: bold;
+            font-size: 14px;
+            width: 216px;
+            height: 44px;
+            border: 1px solid #9873FF;
+            margin-top: 40px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .content-row {
+            font-weight: 100;
+            height: 60px;
+        }
+        
+        .content_th_id {
+            width: 52px;
+        }
+        
+        .content_th_fullname {
+            width: 250px;
+        }
+        
+        .content_th_create_date {
+            width: 148px;
+        }
+        
+        .content_th_last_change {
+            width: 148px;
+        }
+        
+        .content_th_contacts {
+            width: 128px;
+        }
+        
+        .content_th_contacts .contact_icon {
+            margin: 1px;
+        }
+        .contact_icon_num{
+            width: 16px;
+            height: 16px;
+            border-radius: 50px;
+            border: 1px solid purple;
+            font-size: 10px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .content_th_edit {
+            width: 128px;
+        }
+        
+        .content_th_delete {
+            width: 128px;
+        }
+        
+        .content_th_edit:hover {
+            cursor: pointer;
+        }
+        
+        .content_th_delete:hover {
+            cursor: pointer;
+        }
